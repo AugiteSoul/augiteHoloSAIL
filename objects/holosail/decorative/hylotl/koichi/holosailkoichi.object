@@ -1,0 +1,57 @@
+{
+  "objectName" : "holosailkoichi",
+  "colonyTags" : ["hylotl", "misc"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  
+  "category" : "decorative",
+  "description" : "A projector of Koichi, a Hylotl hero, used as a SAIL interface.",
+  "shortdescription" : "HoloSAIL (Large, Koichi)",
+  "race" : "hylotl",
+
+  "apexDescription" : "This device allows interacting with SAIL using an AI interface.",
+  "avianDescription" : "When this device is activated, I can talk with the Hylotl hologram instead of using a screen interface.",
+  "floranDescription" : "Floran isss afraid of talking fish ghossst.",
+  "glitchDescription" : "Intrigued. This Hylotl hologram allows me to interact directly with SAIL.",
+  "humanDescription" : "This thing allows me to chat with an intelligent hologram to control the ship.",
+  "hylotlDescription" : "This hologram depicts Koichi, a Hylotl hero. I feel honoured to interact with it to control SAIL.",
+  "novakidDescription" : "That shiny projection here allows me to control the ship with a nice chat!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "holosailkoichi.png:<color>.<frame>",
+      "flipImages" : true,
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left",
+      "lightPosition" : [2, 1],
+      "beamAngle" : 0
+    },
+    {
+      "image" : "holosailkoichi.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "lightPosition" : [2, -1],
+      "beamAngle" : 180
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/tv_static.ogg",
+
+  "animation" : "holosailkoichi.animation",
+  "animationParts" : {
+    "bg" : "holosailkoichi.png",
+    "fg" : "holosailkoichilit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, -2] ]
+}

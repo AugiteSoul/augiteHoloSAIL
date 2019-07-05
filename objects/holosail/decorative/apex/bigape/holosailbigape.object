@@ -1,0 +1,57 @@
+{
+  "objectName" : "holosailbigape",
+  "colonyTags" : ["misc", "apex"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  
+  "category" : "decorative",
+  "description" : "A projector creating a hologram of Big Ape, used as a SAIL interface.",
+  "shortdescription" : "HoloSAIL (Large, Big Ape)",
+  "race" : "apex",
+
+  "apexDescription" : "This allows me to interact with a Big Ape hologram to control the ship.",
+  "avianDescription" : "When this device is activated, I can talk with SAIL instead of using a screen interface.",
+  "floranDescription" : "Floran isss afraid of talking monkey ghossst.",
+  "glitchDescription" : "Intrigued. This allows me to interact directly with SAIL.",
+  "humanDescription" : "This thing allows me to chat with SAIL to control the ship. It looks like Big Ape.",
+  "hylotlDescription" : "This Apex hologram looks disgusting, but it can be used to control the ship.",
+  "novakidDescription" : "That shiny projection here allows me to control the ship with a nice chat!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "holosailbigape.png:<color>.<frame>",
+      "flipImages" : true,
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left",
+      "lightPosition" : [2, 1],
+      "beamAngle" : 0
+    },
+    {
+      "image" : "holosailbigape.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "lightPosition" : [2, -1],
+      "beamAngle" : 180
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/tv_static.ogg",
+
+  "animation" : "holosailbigape.animation",
+  "animationParts" : {
+    "bg" : "holosailbigape.png",
+    "fg" : "holosailbigapelit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, -2] ]
+}

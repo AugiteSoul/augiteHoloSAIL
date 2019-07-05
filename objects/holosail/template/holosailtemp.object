@@ -1,0 +1,57 @@
+{
+  "objectName" : "holosailtemp",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  
+  "category" : "decorative",
+  "description" : "A projector of unknown origin, used as a SAIL interface.",
+  "shortdescription" : "HoloSAIL (Large, Template)",
+  "race" : "none",
+
+  "apexDescription" : "This device allows interacting with SAIL using a humanoid interface.",
+  "avianDescription" : "When this device is activated, I can talk with SAIL instead of using a screen interface.",
+  "floranDescription" : "Floran isss afraid of talking ghossst.",
+  "glitchDescription" : "Intrigued. This allows me to interact directly with SAIL.",
+  "humanDescription" : "This thing allows me to chat with SAIL to control the ship.",
+  "hylotlDescription" : "Hylotl are very interested in artificial intelligence such as this SAIL interface.",
+  "novakidDescription" : "That shiny projection here allows me to control the ship with a nice chat!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "holosailtemp.png:<color>.<frame>",
+      "flipImages" : true,
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left",
+      "lightPosition" : [2, 1],
+      "beamAngle" : 0
+    },
+    {
+      "image" : "holosailtemp.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "lightPosition" : [2, -1],
+      "beamAngle" : 180
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/tv_static.ogg",
+
+  "animation" : "holosailtemp.animation",
+  "animationParts" : {
+    "bg" : "holosailtemp.png",
+    "fg" : "holosailtemplit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, -2] ]
+}
